@@ -1,0 +1,515 @@
+@import url(/common--theme/base/css/text_highlighter.css);
+ @import url(/common--theme/base/css/autocomplete.css);
+ @import url(/common--theme/base/css/forum.css);
+ @import url(/common--theme/base/css/editor.css);
+ @import url(/common--theme/base/css/odialog.css);
+ 
+ body{
+     margin: 0px;
+ }
+ 
+ #container {
+    margin: 0 auto;
+    padding: 0;
+    width: 90em;
+ }
+ 
+ /* header */
+ #header {
+     position: relative;
+     z-index: 30;
+    height: 170px;
+ }
+ 
+ #header h2{
+     margin: 0;
+     padding: 0;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+ }
+ 
+ #content-wrap {
+     _height: 1%;
+     min-height: 1px;
+    padding: 10px 0px 1px 0px;
+ }
+ 
+ /* side-bar */
+ 
+ #side-bar{
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin: 0px 1em;
+    clear: left;
+}
+ 
+ #page-title{
+     margin: 0 0 0.5em 0;
+    padding-top: 0em; /* Firefox bug? */
+     font-size: 200%;
+     border-bottom: 1px solid #ffa8a8;
+     color:#da0000;
+
+ }
+ 
+ #main-content{
+    margin: 0px 10px 10px 240px;
+    padding: 10px 10px;
+ }
+ 
+ /* * html #main-content {height: 1%;} */
+ 
+ #license-area {
+     padding: 0.5em 0;
+     color: #555;
+}
+ #account-options li{
+     display: block;
+     margin: 0; padding: 0;
+    width: 100%;
+ }
+#account-options li a {
+     display: block;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     padding: 2px 5px;
+     z-index: 40;
+    width: 100%;
+ }
+ 
+#account-options li a:hover {
+     color: black;
+ }
+#account-topbutton {
+     font-size: 80%;
+     font-weight: bold;
+     padding: 0 5px;
+ }
+ #top-bar{
+     position: absolute;
+    left: 240px;
+     bottom: 0px;
+     z-index:0;
+    width: 720px;
+}
+ 
+ #top-bar li {
+     list-style: none;
+     float:left;
+     margin: 0 5px;
+    padding:0;    
+    height: 22px;
+ }
+ #top-bar li ul{
+     padding: 0;
+     text-align: center;
+     display: block;
+     margin: 0;
+    padding: 0.3em 1em;
+     text-decoration: none;
+ }
+ #top-bar a:hover {
+     border-bottom-color:#243356; /* different border color */
+ }
+ 
+ 
+/* Site background image */
+ 
+body {
+    background-image: url(https://i.imghippo.com/files/Tuo871721854270.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color:#1c1c20;
+    color: #A3989E;
+}
+ 
+#container {
+width: 80em;
+}
+ 
+/* Background color of all content of the page below header */
+#content-wrap {
+    background-image: none;
+    background-repeat: repeat-y ;
+    background-position: top left;
+    background-color:;
+    padding-top: 10px;
+}
+ 
+/* Color of page content */
+#main-content {
+    background-color: #1c1c20;
+    color: white;
+    margin-top: 0px;
+ 
+    padding: 0px;
+    margin: 0px 25px 10px 250px;
+}
+ 
+/* Font, size, color and border of page title */
+#page-title {
+ 
+    font-family: Verdana, Arial, Helvetica;
+    border-bottom: 1px solid #A3989E;
+    font-size: 200%;
+    margin: 0pt 0pt 10px;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: lightcyan;
+    padding-left: 20px;
+}
+ 
+#page-content {
+    padding: 10px;
+}
+ 
+#header {
+    background-color: transparent;
+    opacity: 1.0;
+    width: 900px;
+    margin: 0 auto;
+    height: 220px;
+}
+ 
+#header h1 {
+    background-image: none;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+ 
+#header h1 a {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-decoration: none;
+}
+ 
+#header h1 a:hover {
+    color: #78ddff;
+    background-color: transparent;
+    text-decoration: none;
+}
+ 
+#header h2 {
+    background-image: none;
+    color: #181700;
+    left: 0px;
+    top: 60px;
+}
+ 
+/* 1st MENU ELEMENT */
+ 
+/* Background color */
+ 
+#top-bar {
+    bottom: 7px;
+    left: 0px;
+    position: absolute;
+    width: 900px;
+}
+ 
+#top-bar li {
+    background-color: transparent;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+ 
+/* Font color and decoration */
+#top-bar li a {
+    color: white;
+    text-decoration: none;
+}
+ 
+/* Background color on hover */
+#top-bar a:hover{
+    background-color: transparent; 
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+ 
+/* Font color on hover*/
+#top-bar li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* ---------------------------------- */
+ 
+/* 2nd MENU ELEMENT */
+#top-bar ul li ul {
+    background-color: black;
+    opacity: 0.75;
+    border: 0px;
+}
+ 
+#top-bar ul li ul a {
+    background-color: black;
+    -moz-border-radius: 0px;
+}
+ 
+#top-bar ul li ul a:hover {
+    background-color: white; 
+    color: black;
+    -moz-border-radius: 0px;
+}
+ 
+/* ---------------------------------- */
+ 
+/* color of side-bar*/
+#side-bar {
+    background-color: black;
+    margin-top: 15px;
+    border: 0px dashed #BB6D00;
+    opacity: 1;
+    padding-left: 20px;
+    color: orange;
+}
+ 
+/*  FONTS   */
+ 
+/* General font family and color*/
+body {
+    font-family: Verdana, Arial, Helvetica;
+    color: #ffffff;
+}
+ 
+/* Font family of headers */
+h1,h2,h3,h4,h5,h6{
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+ 
+/* Sizes, weight and text-decorations of headers */
+h1{
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 34px;
+    line-height: 30px;
+}
+h2{
+    font-weight: normal;
+    font-size: 150%;
+    text-decoration: none;
+    background-image: url(file:///home/squark/theme-template/urban-style/h1-bg.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 34px;
+    height: 30px;
+}
+h3{
+    font-weight: normal;
+    font-size: 130%;
+    text-decoration: none;
+}
+h4{
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+}
+h5 {
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+h6 {
+    font-weight: bold;
+    font-size: 90%;
+    text-decoration: none;
+}
+ 
+a {
+    color: #41c3ff;
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: #b7e8ff;
+    text-decoration: none;
+    background: transparent;
+ 
+}
+ 
+a:visited {
+    color: #41c3ff;
+}
+
+
+
+#side-bar a:visited{
+    color: aliceblue;
+}
+
+#footer {
+    color: #444;
+    background-color: transparent;
+    opacity: 1.0;
+    border-bottom:1px solid #888;
+    border-top:1px solid #888;
+}
+ 
+#footer a {
+    color: #666;
+    text-decoration: none;
+}
+ 
+#license-area {
+    color: #444;
+}
+ 
+#license-area a {
+    color: #666;
+    text-decoration: none;
+}
+ 
+#license-area a:hover {
+    color: #666;
+    text-decoration: underline;
+    background-color: transparent;
+}
+ 
+#login-status {
+    color: black;
+ 
+}
+ 
+#search-top-box {
+    position:absolute;
+    right:0px;
+    top:73px;
+    z-index:10;
+}
+
+#side-bar a, #side-bar a:visited{
+    color: lightgreen; 
+}
+
+
+/* TABS */
+
+ 
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color:#d8d8d8; /* tab background */
+    border-color:#FFa3a3;
+    color:#000;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    border-color: #a3a3a3;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    background:#700; /* selected tab background */
+    color:#fff;
+}
+
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #444;
+}
+
+.yui-navset{
+    color:#000;
+   
+}
+
+.yui-navset p{
+    margin: 1em;
+    
+}
+
+.yui-navset a{
+    color:darkblue;
+}
+
+
+/* BLOCKQUOTES */
+
+blockquote {
+    border: 1px dashed #999;
+    padding: 0 1em;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Standard Image Block */
+.scp-image-block {
+	border: solid 1px #666;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+	width: 300px;
+}
+
+.scp-image-block.block-right {
+	float: right;
+	clear: right;
+	margin: 0 2em 1em;
+}
+
+.scp-image-block.block-left {
+	float: left;
+	clear: left;
+	margin: 0 2em 1em 0;
+}
+
+.scp-image-block.block-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.scp-image-block img {
+	border: 0;
+	width: 100%;
+}
+
+.scp-image-block .scp-image-caption {
+	background-color: #eee;
+	border-top: solid 1px #666;
+	padding: 2px 0;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.scp-image-block > p {
+	margin: 0;
+}
+
+.scp-image-block .scp-image-caption > p {
+	margin: 0;
+	padding: 0 10px;
+}
+
+/* Dialog box */
+
+.owindow{
+    color:black;
+}
+
+
+.alert-info{
+    color:black;
+}
+
+
+/* Footnote */
+
+.footnote{
+    color:black;}
+
+/* Collapsible */
+
+.collapsible-block-link {
+	margin-left: 1em;
+}
+
+.collapsible-block-link a{
+    color:rgb(206, 206, 0);
+}
